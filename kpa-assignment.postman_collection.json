@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "7390b211-0031-43cb-9323-1771d15eb975",
+		"name": "kpa-assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36486592"
+	},
+	"item": [
+		{
+			"name": "post method",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"axleBoxHousingBoreDia\": \"156.1\",\r\n  \"bearingSeatDiameter\": \"205.0\",\r\n  \"condemningDia\": \"172.3\",\r\n  \"intermediateWP\": \"180.7\",\r\n  \"lastShopIssueSize\": \"179.6\",\r\n  \"rollerBearingBoreDia\": \"92.0\",\r\n  \"rollerBearingOuterDia\": \"194.0\",\r\n  \"rollerBearingWidth\": \"54.7\",\r\n  \"treadDiameterNew\": \"843.5\",\r\n  \"variationSameAxle\": \"2.4\",\r\n  \"variationSameBogie\": \"3.3\",\r\n  \"variationSameCoach\": \"4.5\",\r\n  \"wheelDiscWidth\": \"103.0\",\r\n  \"wheelGauge\": \"1679\",\r\n  \"wheelProfile\": \"Reinforced\",\r\n  \"formNumber\": \"WS-2025-006\",\r\n  \"submittedBy\": \"Pooja Sharma\",\r\n  \"submittedDate\": \"2025-07-08\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/forms/wheel-specifications/create/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"forms",
+						"wheel-specifications",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get method",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/forms/wheel-specifications/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"forms",
+						"wheel-specifications",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
